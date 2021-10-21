@@ -1,26 +1,50 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<div class="page">
+  <div class="page__wrap">
+      <h1>Добавление товара</h1>
+      <div class="page__content">
+        <the-aside></the-aside>
+        <the-catalog></the-catalog>
+      </div>
+  </div>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import './assets/scss/style.scss';
+import TheAside from './components/TheAside.vue';
+import TheCatalog from './components/TheCatalog.vue';
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-  },
+  components: { TheAside, TheCatalog },
 };
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .page{
+    background: #E5E5E5;
+    min-height: 100vh;
+
+    h1 {
+      margin: 0;
+    }
+  }
+  .page__wrap {
+    max-width: 1440px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px;
+
+  }
+  .page__content {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    margin-top: 16px;
+    @media screen and (max-width: 650px) {
+      display: block;
+    }
+  }
+
 </style>

@@ -1,0 +1,27 @@
+body {
+    font-family: 'SourceSansPro';
+    font-weight: normal;
+    color: $text-color;
+    margin: 0;
+}
+.vs__dropdown-toggle {
+    background: #FFFEFB !important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 3px 27px 4px 16px !important;
+    border: none !important;
+    
+} 
+.vs__dropdown-menu {
+    //max-width: 200px;
+    //margin-left: auto !important;
+}
+.vs__clear {
+    display: none;
+}
+.vs__selected {
+    font-size: 12px;
+    line-height: 15px !important;
+    color: #B4B4B4 !important;
+    margin: 0 !important;
+}
